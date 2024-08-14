@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-Primary {
+    @apply bg-brand-color py-2 lg:py-3 px-7 lg:px-10 rounded-lg text-white font-bold text-sm lg:text-lg border-2 border-brand-color  hover:bg-dark-10  transition duration-300;
+  }
+  .card {
+    @apply w-[205px] lg:w-[320px] flex flex-col gap-4 justify-center items-center text-center text-sm;
+  }
+  .cardTitle {
+    @apply font-semibold text-lg lg:text-xl;
+  }
+  .cardDesc {
+    @apply text-xs lg:text-base;
+  }
+  .headerBtn {
+    @apply transition duration-300 text-white cursor-pointer hover:bg-dark-10 hover:border-brand-color rounded-lg py-2 px-2 md:px-4 border-2 border-transparent;
+  }
+}
